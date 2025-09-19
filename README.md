@@ -11,6 +11,7 @@ A primary bluetooth module transmits PIR motion sensor data to a separate second
 - PIR motion sensor data is transmitted via primary bluetooth module.
 - Secondary bluetooth module receives sensor data.
 - Arudino board receives sensor data and controls lighting system accordingly.
+- System will enter power saving mode when room lights are turned off, using photocell resistor.
 - Designed for detecting when a room is empty and alerting in a separate room.
 
 ---
