@@ -30,17 +30,6 @@ Serial.print("state: ");
 Serial.write(state);
 }
 
-/*if (state == '1') {
-  //rainbow();
-  notRdy();
-  int time = hour();
-  Serial.println();
-  state = 0;
-}
-else if (state == '0') {
-  rdy();
-  state = 0;
-}*/
 
 switch (state) {
       case '0':
@@ -74,18 +63,6 @@ void rdy(){
   }
 }
 
-//int wait) {
-  /*pixels.clear();
-  for(long firstPixelHue = 0; firstPixelHue < 1*65536; firstPixelHue += 256) {
-    for(int i=0; i<strip.numPixels(); i++) { 
-      int pixelHue = firstPixelHue + (i * 65536L / strip.numPixels());
-      strip.setPixelColor(i, strip.gamma32(strip.ColorHSV(pixelHue)));
-    }
-    strip.show();
-    //delay(wait);
-  }*/
-
-
 void notRdy() {
   //pixels.clear();
   for(int i=0; i<NUMPIXELS; i++) {
@@ -98,7 +75,6 @@ void notRdy() {
     delay(DELAYVAL); // Pause before next pass through loop
   }
   }
-
 
  void ledOff() {
  //pixels.clear();
